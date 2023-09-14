@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -5,7 +7,6 @@ import LinearProgress from '@mui/material/LinearProgress';
 import HexagonIcon from '@mui/icons-material/Hexagon';
 import Box from '@mui/material/Box';
 import blue from '@mui/material/colors/blue';
-import { relative } from 'path';
 
 export default function Skill() {
   gsap.registerPlugin(ScrollTrigger);
