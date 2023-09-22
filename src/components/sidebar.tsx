@@ -4,8 +4,9 @@ import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { basicType } from "@/data";
 
-export default function Sidebar({ data }: any) {
+export default function Sidebar({ data }: {data: basicType}) {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
 
   const links = [
@@ -107,7 +108,7 @@ export default function Sidebar({ data }: any) {
             className="rounded-full mb-[30px] w-[150px] h-[150px] object-cover"
           />
           <h2 className="font-playfair text-[2.2rem] font-bold text-black mb-3 capitalize">
-            {data.name}
+            {`${data.firstName} ${data.middleName} ${data.lastName}`}
           </h2>
           <h3 className="font-quicksand text-xl text-[#2c98f0] uppercase">
             {data.job}

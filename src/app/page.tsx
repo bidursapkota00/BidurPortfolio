@@ -1,7 +1,7 @@
-import React from 'react';
-import { data as d } from '../data';
+import React from "react";
+import { data as d, dataType } from "../data";
 
-import HomePage from '@/components/home';
+import HomePage from "@/components/home";
 
 async function getData() {
   // const res = await fetch('https://api.example.com/...')
@@ -15,5 +15,5 @@ async function getData() {
 export default async function Home() {
   const data = await getData();
 
-  return <HomePage data={data} />;
+  return <HomePage data={data as dataType} />;
 }
