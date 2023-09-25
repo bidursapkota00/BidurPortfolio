@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${quicksand.variable}`}>
-      <body>
+      <body className='font-quicksand text-[1.6rem] text-[rgba(0,0,0,0.7)] leading-[1.8] font-[400]'>
         <ThemeRegistry>{children}</ThemeRegistry>
       </body>
     </html>

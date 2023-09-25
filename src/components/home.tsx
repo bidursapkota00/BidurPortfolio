@@ -16,7 +16,14 @@ const HomePage = ({ data }: { data: dataType }) => {
         >
           <Hero data={data.basic}/>
           <About data={data.basic}/>
-          <Skill />
+          {/* <Skill /> */}
+          <div id="services__section"></div>
+          <div id="skills__section"></div>
+          <div id="education__section"></div>
+          <div id="experience__section"></div>
+          <div id="work__section"></div>
+          <div id="blog__section"></div>
+          <div id="contact__section"></div>
         </div>
       </div>
     </div>

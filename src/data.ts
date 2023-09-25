@@ -11,6 +11,8 @@ export const data = {
     profile: "/profile1.jpg",
     about:
       "Motivated and detail-oriented graduate of Bachelor's degree in Electronics, Communication and Information Engineering. Skilled in Web development, Mobile app development as well as Hardware design and coding. A quick learner and strong problem-solver with a passion for exploring new technologies and finding innovative solutions. Considered hardworking, punctual and driven.",
+    expertise: ['graphic design', 'web design', 'software', 'application'],
+    expertiseIcon: ['bulb', 'globe', 'data', 'phone'],
     phone: "9865711881",
     email: "bidursapkota00@gmail.com",
     address: "Nakhipot, Lalitpur",
@@ -135,6 +137,7 @@ export interface basicType {
   eduTitle: string;
   profile: string;
   about: string;
+  expertise: string[];
   phone: number;
   email: string;
   address: string;
